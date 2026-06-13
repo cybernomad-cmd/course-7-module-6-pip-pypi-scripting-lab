@@ -1,6 +1,10 @@
 from datetime import datetime
 
 def generate_log(log_data):
+    """
+    Creates a timestamped log file and writes each log entry to it.
+    """
+
     if not isinstance(log_data, list):
         raise ValueError("log_data must be a list")
 
